@@ -438,9 +438,9 @@ export const menuData: MenuItem[] = [
 ];
 
 export function getItemName(item: MenuItem, lang: Language): string {
-  return item[`name_${lang}`] ?? item.name_en;
+  return item[`name_${lang}` as `name_${Language}`] ?? item.name_en;
 }
 
 export function getItemDescription(item: MenuItem, lang: Language): string {
-  return item[`description_${lang}`] ?? item.description_en;
+  return item[`description_${lang}` as `description_${Language}`] ?? item.description_en;
 }
