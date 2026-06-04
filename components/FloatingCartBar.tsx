@@ -18,7 +18,7 @@ export function FloatingCartBar() {
         <Text style={{ color: 'rgba(255,255,255,0.75)', fontSize: 11 }}>{totalItems} item{totalItems > 1 ? 's' : ''} added</Text>
         <Text style={{ color: 'white', fontSize: 18, fontFamily: 'PlayfairDisplay_700Bold' }}>₹{subtotal}</Text>
       </View>
-      <Pressable onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); router.push('/(tabs)/cart'); }}
+      <Pressable onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); router.push('/(tabs)/order'); }}
         style={{ backgroundColor: 'rgba(255,255,255,0.2)', paddingHorizontal: 20, paddingVertical: 10, borderRadius: 12 }}>
         <Text style={{ color: 'white', fontFamily: 'Inter_700Bold', fontSize: 14 }}>View Cart →</Text>
       </Pressable>

@@ -38,7 +38,7 @@ export default function OnboardingSetup() {
     } catch { /* ignore */ }
     setHasOnboarded(true);
     setLoading(false);
-    router.replace('/(tabs)');
+    router.replace('/(tabs)/menu');
   }
 
   return (
