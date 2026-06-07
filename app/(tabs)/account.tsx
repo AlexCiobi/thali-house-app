@@ -28,9 +28,7 @@ interface OrderRecord {
 
 const LANGUAGES: { code: Language; label: string }[] = [
   { code: 'en', label: 'EN' },
-  { code: 'mr', label: 'MR' },
-  { code: 'hi', label: 'HI' },
-  { code: 'kn', label: 'KN' },
+  { code: 'mr', label: 'मराठी' },
 ]
 
 export default function AccountScreen() {

@@ -9,18 +9,19 @@ import { t } from '../../lib/translations';
 import { COLORS } from '../../lib/colors';
 import type { Language } from '../../lib/menuData';
 
-type Category = 'ALL' | 'THALI' | 'STARTERS' | 'MAIN_COURSE' | 'BREADS' | 'RICE' | 'BEVERAGES' | 'SNACKS';
+type Category = 'ALL' | 'VEG' | 'CHICKEN_THALI' | 'MUTTON_THALI' | 'HANDI' | 'EGG' | 'RICE' | 'BREADS' | 'OTHERS';
 type VegFilter = 'all' | 'veg' | 'nonveg';
 
 const CATS: { id: Category; emoji: string; label: string }[] = [
   { id: 'ALL', emoji: '🍱', label: 'All' },
-  { id: 'THALI', emoji: '🍛', label: 'Thali' },
-  { id: 'STARTERS', emoji: '🥘', label: 'Starters' },
-  { id: 'MAIN_COURSE', emoji: '🍖', label: 'Mains' },
-  { id: 'BREADS', emoji: '🫓', label: 'Breads' },
+  { id: 'VEG', emoji: '🥬', label: 'Veg' },
+  { id: 'CHICKEN_THALI', emoji: '🍛', label: 'Chicken' },
+  { id: 'MUTTON_THALI', emoji: '🐑', label: 'Mutton' },
+  { id: 'HANDI', emoji: '🫕', label: 'Handi' },
+  { id: 'EGG', emoji: '🥚', label: 'Egg' },
   { id: 'RICE', emoji: '🍚', label: 'Rice' },
-  { id: 'BEVERAGES', emoji: '🥛', label: 'Drinks' },
-  { id: 'SNACKS', emoji: '🥜', label: 'Snacks' },
+  { id: 'BREADS', emoji: '🫓', label: 'Breads' },
+  { id: 'OTHERS', emoji: '🥗', label: 'Others' },
 ];
 
 export default function MenuTab() {

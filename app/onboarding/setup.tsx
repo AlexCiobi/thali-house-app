@@ -9,9 +9,7 @@ import type { Language } from '../../lib/menuData';
 
 const LANGUAGES: { code: Language; label: string; native: string }[] = [
   { code: 'mr', label: 'MR', native: 'मराठी' },
-  { code: 'hi', label: 'HI', native: 'हिंदी' },
   { code: 'en', label: 'EN', native: 'English' },
-  { code: 'kn', label: 'KN', native: 'ಕನ್ನಡ' },
 ];
 
 export default function OnboardingSetup() {

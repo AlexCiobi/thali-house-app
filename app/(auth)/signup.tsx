@@ -16,8 +16,6 @@ import { COLORS } from '../../lib/colors'
 const LANGUAGES = [
   { code: 'en' as const, label: 'English' },
   { code: 'mr' as const, label: 'मराठी' },
-  { code: 'hi' as const, label: 'हिंदी' },
-  { code: 'kn' as const, label: 'ಕನ್ನಡ' },
 ]
 
 export default function SignupScreen() {
@@ -26,7 +24,7 @@ export default function SignupScreen() {
   const [whatsapp, setWhatsapp] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [language, setLanguage] = useState<'en' | 'mr' | 'hi' | 'kn'>('en')
+  const [language, setLanguage] = useState<'en' | 'mr'>('en')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
 
